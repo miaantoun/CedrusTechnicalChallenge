@@ -16,6 +16,8 @@ The functionalities in Angular are the following:
 - Table for movies getting the values but there is a delay in refreshing
 - Serach not linked to the API.
 
+Note: The IP of the API should be changed in Angular in sharedservice.service.ts
+
 RUNNING the APP:
 - Open MongoDB and connect to the localhost:27017
 - Download the DB file and run the DBInsertion.ipynb to populate the DB
