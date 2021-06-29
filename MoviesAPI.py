@@ -103,16 +103,18 @@ def add_rating():
     if username and movieid and rating and request.method == 'POST':
         mongo.db.UserMovie.insert({'username': username, 'movieid': movieid, 'rating': rating})
 
-    
-        x = mongo.db.Movie.find()
-        for item in x:
-            if(item["movieid"]==movieid):
-                m_id = item["_id"]
-                nbrUsersRating = item["NbrUsersRating"] + 1
-                m_rating = (item["Rating"]+rating)/nbrUsersRating
-                print(nbrUsersRating)
-                print(m_rating)
-        mongo.db.Movie.update_one({'_id': ObjectId(m_id['$oid']) if '$oid' in m_id else ObjectId(m_id)},{'$set':{'NbrUsersRating': nbrUsersRating,'Rating': m_rating}})
+        #updating rating not working
+       # x = mongo.db.Movie.find()
+      #  for item in x:
+         #   if(item["movieid"]==movieid):
+         #       m_id = item["_id"]
+         #       nbrUsersRating = item["NbrUsersRating"] + 1
+         #       m_rating = (item["Rating"]+rating)/nbrUsersRating
+
+        
+         #       mongo.db.Movie.update({'_id': ObjectId(m_id['$oid']) if '$oid' in m_id else ObjectId(m_id)},{'$set':{'Name':item["Name"],'movieid':item['movieid'],
+          #      'Genre':item['Genre'],'YearReleased':item['YearReleased'],'Description':item['Description'],'Rating': m_rating, 'NbrUsersRating': nbrUsersRating,
+          #      'Classification': item['Classification']}})
 
         resp = jsonify("Successfully")
         resp.status_code = 200
