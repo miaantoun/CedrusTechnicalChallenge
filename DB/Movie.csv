@@ -1,0 +1,4 @@
+Name,movieid,Genre,YearReleased,Description,Rating,NbrUsersRating
+Citizen Kane,1,Drama,1041,"Back in the headlines thanks to David Fincher’s brilliantly acerbic making-of drama Mank, Citizen Kane always finds a way to renew itself for a new generation of film lovers.",7,1
+Seven Samurai,2,Adventure,1954,"It’s the easiest 207 minutes of cinema you’ll ever sit through. On the simplest of frameworks—a poor farming community pools its resources to hire samurai to protect them from the brutal bandits who steal its harvest—Akira Kurosawa mounts a finely drawn epic, by turns absorbing, funny and exciting.",8,1
+Raiders of the Lost Ark,3,Action,1981,"Starting with a dissolve from the Paramount logo and ending in a warehouse inspired by Citizen Kane, Raiders of the Lost Ark celebrates what movies can do more joyously than any other film.",5.5,1
