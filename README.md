@@ -17,7 +17,7 @@ The functionalities in Angular are the following:
 - Serach not linked to the API.
 
 RUNNING the APP:
-1- Open MongoDB and connect to the localhost:27017
-2- Download the DB file and run the DBInsertion.ipynb to populate the DB
-3- Open the API.py file and run the python code
-4- Open Webstorm and run the project
+- Open MongoDB and connect to the localhost:27017
+- Download the DB file and run the DBInsertion.ipynb to populate the DB
+- Open the API.py file and run the python code
+- Open Webstorm and run the project
